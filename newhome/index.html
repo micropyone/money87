@@ -14,7 +14,7 @@
     
     
       
-        <title>最佳五檔 - 台股計算機</title>
+        <title>調整首頁 - 台股計算機</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              最佳五檔
+              調整首頁
             
           </span>
         </div>
@@ -232,77 +232,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          最佳五檔
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../fibest/" class="md-nav__link">
         最佳五檔
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#homehtml" class="md-nav__link">
-    修改 home.html 新增「最佳五檔」連結按鈕
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#route-view-function" class="md-nav__link">
-    新增「最佳五檔」 route 和定義 view function
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basehtml-fibesthtml" class="md-nav__link">
-    繼承 base.html 新建「最佳五檔」樣板 fibest.html
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maincss" class="md-nav__link">
-    main.css 新增樣式
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mainjs" class="md-nav__link">
-    main.js 新增程式
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -343,11 +277,56 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../newhome/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          調整首頁
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         調整首頁
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mainpy" class="md-nav__link">
+    修改 main.py
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fibesthtml" class="md-nav__link">
+    修改 fibest.html
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -392,36 +371,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#homehtml" class="md-nav__link">
-    修改 home.html 新增「最佳五檔」連結按鈕
+  <a href="#mainpy" class="md-nav__link">
+    修改 main.py
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#route-view-function" class="md-nav__link">
-    新增「最佳五檔」 route 和定義 view function
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basehtml-fibesthtml" class="md-nav__link">
-    繼承 base.html 新建「最佳五檔」樣板 fibest.html
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maincss" class="md-nav__link">
-    main.css 新增樣式
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mainjs" class="md-nav__link">
-    main.js 新增程式
+  <a href="#fibesthtml" class="md-nav__link">
+    修改 fibest.html
   </a>
   
 </li>
@@ -439,40 +397,9 @@
               
                 
                 
-                <h1 id="_1">最佳五檔</h1>
-<h2 id="homehtml">修改 home.html 新增「最佳五檔」連結按鈕</h2>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>{% extends &#39;base.html&#39; %}
-{% set page_title = &#39;首頁&#39; %}
-{% set page_header = &#39;台股計算機&#39; %}
-
-{% block content %}
-  <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center mt-3&quot;</span><span class="p">&gt;</span>{{ page_header }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-lg-3 d-grid&quot;</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> 
-         <span class="na">href</span><span class="o">=</span><span class="s">&quot;/fibest&quot;</span><span class="p">&gt;</span>最佳五檔
-      <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-{% endblock %}
-</code></pre></div>
-</td></tr></table>
-<h2 id="route-view-function">新增「最佳五檔」 route 和定義 view function</h2>
+                <h1 id="_1">調整首頁</h1>
+<h2 id="mainpy">修改 main.py</h2>
+<p>刪除 home() 函式</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -514,20 +441,22 @@
 39
 40
 41
-42</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+42
+43</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 <span class="c1"># 匯入 render_template 以使用樣板</span>
-<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">send_from_directory</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s1">&#39;Hello, from Flask!&#39;</span>
-
-<span class="c1"># route 名稱必須以斜線開頭</span>
-<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">&#39;home.html&#39;</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/favicon.ico&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">favicon</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">send_from_directory</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">root_path</span><span class="p">,</span> <span class="s1">&#39;static&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;favicon.ico&#39;</span><span class="p">,</span> <span class="n">mimetype</span><span class="o">=</span><span class="s1">&#39;image/x-icon&#39;</span><span class="p">)</span>
 
 <span class="c1"># 最佳五檔主頁</span>
 <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/fibest&#39;</span><span class="p">)</span>
@@ -558,7 +487,8 @@
 <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">81</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-<h2 id="basehtml-fibesthtml">繼承 base.html 新建「最佳五檔」樣板 fibest.html</h2>
+<h2 id="fibesthtml">修改 fibest.html</h2>
+<p>調整 Home 的 href 屬性</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -639,83 +569,9 @@
   <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
 
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-secondary&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/home&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-secondary&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 {% endblock %}
-</code></pre></div>
-</td></tr></table>
-<h2 id="maincss">main.css 新增樣式</h2>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">form-floating</span> <span class="nt">label</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="mh">#000</span> <span class="cp">!important</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.2</span><span class="kt">em</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="p">.</span><span class="nc">form-floating</span> <span class="nt">input</span> <span class="p">{</span>
-  <span class="k">padding</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span> <span class="mi">15</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
-<h2 id="mainjs">main.js 新增程式</h2>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#btnFiveBest&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">getFiveBest</span><span class="p">();</span> <span class="p">});</span>
-<span class="p">});</span>
-
-<span class="kd">function</span> <span class="nx">getFiveBest</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="s1">&#39;type&#39;</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="s1">&#39;url&#39;</span><span class="o">:</span> <span class="s1">&#39;/fibest/table/&#39;</span><span class="o">+</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#price&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(),</span>
-        <span class="nx">beforeSend</span><span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
-            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#btnFiveBest &gt; span&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;d-none&#39;</span><span class="p">);</span>
-        <span class="p">},</span>
-    <span class="p">})</span>
-    <span class="p">.</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="p">[];</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="sb">`</span>
-<span class="sb">            &lt;tr&gt;</span>
-<span class="sb">            &lt;td class=&quot;text-success&quot;&gt;</span><span class="si">${</span><span class="nx">data</span><span class="p">.</span><span class="nx">fibest</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mf">5</span><span class="p">]</span><span class="si">}</span><span class="sb">&lt;/td&gt;</span>
-<span class="sb">            &lt;td class=&quot;text-danger&quot;&gt;</span><span class="si">${</span><span class="nx">data</span><span class="p">.</span><span class="nx">fibest</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="si">}</span><span class="sb">&lt;/td&gt;</span>
-<span class="sb">            &lt;/tr&gt;`</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;tbody&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">items</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">));</span>
-    <span class="p">})</span>
-    <span class="p">.</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">jqXHR</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">jqXHR</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span> <span class="p">})</span>
-    <span class="p">.</span><span class="nx">always</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#btnFiveBest &gt; span&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;d-none&#39;</span><span class="p">);</span>
-    <span class="p">});</span>
-<span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
                 
@@ -736,7 +592,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../static/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../favicon/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -745,19 +601,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                靜態檔案
+                網站圖示
               </div>
             </div>
           </a>
         
         
-          <a href="../github/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../about/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                連接GitHub
+                關於本站
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
