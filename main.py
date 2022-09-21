@@ -1,12 +1,18 @@
+import os
 from flask import Flask
 # 匯入 render_template 以使用樣板
-from flask import render_template
+from flask import render_template, send_from_directory
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return 'Hello, from Flask!'
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+        'favicon.ico', mimetype='image/x-icon')
 
 # route 名稱必須以斜線開頭
 @app.route('/home')
